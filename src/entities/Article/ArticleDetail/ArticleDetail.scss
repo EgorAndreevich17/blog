@@ -1,0 +1,37 @@
+@use '../../../styles//vars.scss' as vars;
+
+.postdetail {
+  max-width: vars.$content-size;
+  margin: 20px auto;
+  padding-bottom: 20px;
+
+  &__title-text {
+    cursor: default;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  &__desc {
+    color: vars.$text-color-secondary;
+    margin: 19px 0 25px;
+  }
+
+  &__body {
+    font-size: 18px;
+    margin-left: 20px;
+  }
+}
+
+.btns {
+  display: flex;
+  justify-content: end;
+  margin-top: 20px;
+  gap: 12px;
+}
+
+.triangle {
+  display: inline-block;
+  border: 12px solid transparent;
+  border-right: 6px solid blue;
+  position: absolute;
+}
